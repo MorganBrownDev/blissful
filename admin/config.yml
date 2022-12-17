@@ -6,6 +6,7 @@ publish_mode: editorial_workflow
 collections:
   - label: "posts"
     name: "Post"
+    create: true
     files:
       - label: "Info"
         name: "info"
