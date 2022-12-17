@@ -6,10 +6,12 @@ publish_mode: editorial_workflow
 collections:
   - label: "posts"
     name: "Post"
+    extension: md
+    format: md
     files:
       - label: "Info"
         name: "info"
-
+        file: "cms/_posts/"
         fields:
           - { label: "Message", name: message, widget: string }
           - { label: "Featured Image", name: "thumbnail", widget: "image" }
