@@ -6,8 +6,8 @@ publish_mode: editorial_workflow
 collections:
   - label: "posts"
     name: "Post"
-    extension: md
-    format: md
+    extension: markdown
+    format: markdown
     files:
       - label: "Info"
         name: "info"
