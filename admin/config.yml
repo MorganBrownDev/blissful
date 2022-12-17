@@ -5,10 +5,10 @@ media_folder: "images/uploads" # Media files will be stored in the repo under im
 publish_mode: editorial_workflow
 collections:
   - label: "Content"
-  name: "content"
-  folder: "_posts/content"
-  create: true
-  format: "json"
-      fields:
-        - { label: "Message", name: message, widget: string }
-        - { label: "Featured Image", name: "thumbnail", widget: "image" }
+    name: "content"
+    folder: "_posts/content"
+    create: true
+    format: "json"
+        fields:
+          - { label: "Message", name: message, widget: string }
+          - { label: "Featured Image", name: "thumbnail", widget: "image" }
