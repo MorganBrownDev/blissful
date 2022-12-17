@@ -4,14 +4,10 @@ backend:
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
 publish_mode: editorial_workflow
 collections:
-  - label: "posts"
-    name: "Post"
+  - label: "Blog"
+    name: "blog"
+    folder: "cms/_posts"
     create: true
-    files:
-      - label: "Info"
-        name: "info"
-        format: "json"
-        file: "cms/_posts/test.json"
-        fields:
-          - { label: "Message", name: message, widget: string }
-          - { label: "Featured Image", name: "thumbnail", widget: "image" }
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
