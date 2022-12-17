@@ -142,7 +142,6 @@ Classes
     width: 100vw;
     max-width: 100%;
     overflow: hidden;
-    position: relative;
 }
 
 .hero-image {
@@ -158,25 +157,8 @@ Classes
     justify-content: center;
 }
 
-.overlay {
-    position: absolute;
-    z-index: 9;
-    width: 100vw;
-    height: 100vh;
-    background-attachment: fixed;
-    max-width: 100%;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(6,6,6,0.2637429971988795) 100%);
-}
-
 #hero-head {
     margin-top: 70px;
-    position: relative;
-    z-index: 10;
-}
-#hero-copy {
-    position: relative;
-    z-index: 10;
 }
 
 .content {
