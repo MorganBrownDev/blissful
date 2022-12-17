@@ -20,8 +20,9 @@ Utilities
   
 
 body {
-    color: black;
+    color: white;
     font-family: 'Montserrat', sans-serif;
+    background: black;
 }
 
 header {
@@ -50,6 +51,11 @@ li {
 
 a {
     text-decoration: none;
+}
+
+main {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 section {
@@ -136,6 +142,7 @@ Classes
     width: 100vw;
     max-width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .hero-image {
@@ -145,6 +152,31 @@ Classes
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    max-width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(6,6,6,0.2637429971988795) 100%);
+}
+
+#hero-head {
+    margin-top: 70px;
+    position: relative;
+    z-index: 10;
+}
+#hero-copy {
+    position: relative;
+    z-index: 10;
 }
 
 .content {
@@ -159,6 +191,26 @@ Classes
 
 .intro-text { 
     text-align: center;
+}
+
+.card-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.card {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(36, 36, 36);
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 
