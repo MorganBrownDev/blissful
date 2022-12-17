@@ -6,12 +6,11 @@ publish_mode: editorial_workflow
 collections:
   - label: "posts"
     name: "Post"
-    extension: markdown
-    format: markdown
     files:
       - label: "Info"
         name: "info"
-        file: "cms/_posts/"
+        format: "json"
+        file: "cms/_posts/main.json"
         fields:
           - { label: "Message", name: message, widget: string }
           - { label: "Featured Image", name: "thumbnail", widget: "image" }
