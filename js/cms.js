@@ -13,7 +13,7 @@ function render (head, message) {
     const container = document.getElementById('head')
     const hero = document.getElementById('hero')
     
-    let about = await fetch('cms/_posts/test.json')
+    let about = await fetch('cms/_posts/*.json')
     let ready = await about.json()
     
     let { message } = ready
