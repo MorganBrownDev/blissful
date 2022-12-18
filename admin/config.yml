@@ -8,7 +8,7 @@ collections:
     name: "content"
     files:
       - label: "Home page"
-        name: "home page"
+        name: "homepage"
         format: "json"
         file: "cms/_posts/home.json"
         fields:
