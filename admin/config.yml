@@ -12,6 +12,6 @@ collections:
         format: "json"
         file: "cms/_posts/home.json"
         fields:
-          - { label: "Hero Image", name: "hero_image", widget: "image" }
-          - { label: "Hero Heading", name: hero_heading, widget: string }
-          - { label: "Hero Copy", name: hero_copy, widget: string }
+          - { label: "Hero Image", name: "heroimage", widget: "image" }
+          - { label: "Hero Heading", name: heroheading, widget: string }
+          - { label: "Hero Copy", name: herocopy, widget: string }
