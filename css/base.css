@@ -189,10 +189,9 @@ Classes
     overflow: hidden;
 }
 
-.hero-image {
+.hero-img {
     height: 100%;
     width: 100%;
-    background-image: url(/images/uploads/hero.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
