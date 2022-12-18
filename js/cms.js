@@ -1,6 +1,6 @@
 
 function render_hero_image (heroImage, heroimage) {
-  heroImage.src = `${heroimage}`
+  heroImage.style.backgroundImage = `url(${heroimage})`
 }
 
 function render_hero_heading_text (heroHeading, heroheading) {
