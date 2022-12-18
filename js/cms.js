@@ -1,26 +1,27 @@
 
+    const heroImage = document.getElementById('hero-image')
+    const heroHeading = document.getElementById('hero-head')
+    const heroCopy = document.getElementById('hero-copy')
 
-function render (head, message) {
-    head.innerHTML = `${message}`
-  }
-  
-  function render_img (hero, thumbnail) {
-    hero.backgroundImage = `url('${thumbnail}')`
-  }
+
+function render (heroImage, hero_image, heroHeading, hero_copy) {
+  hero_img.backgroundImage = `url('${hero_image}')`
+  hero_heading.innerHTML = `${hero_heading}`
+  hero_copy.innerHTML = `${hero_copy}`
+}
+
   
   (async function () {
-  
-    const container = document.getElementById('head')
-    const hero = document.getElementById('hero')
+
     
-    let about = await fetch('cms/_posts/main.json')
+    let about = await fetch('cms/_posts/home.json')
     let ready = await about.json()
     
-    let { message } = ready
-    let { thumbnail } = ready
+    let { hero_image } = ready
+    let { hero_heading } = ready
+    let { hero_copy } = ready
   
-    render(head, message)
-    render_img (hero, thumbnail)
+    render (heroImage, hero_image, heroHeading, hero_copy)
 
   })()
   
