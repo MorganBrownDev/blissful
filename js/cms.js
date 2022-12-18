@@ -20,7 +20,7 @@ function render_hero_copy (heroCopy, herocopy) {
 
     
     let about = await fetch('cms/_posts/home.json')
-    let ready = await about.json()
+    let ready = await home.json()
     
     let { heroimage } = ready
     let { heroheading } = ready
