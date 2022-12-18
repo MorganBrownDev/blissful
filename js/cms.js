@@ -4,9 +4,18 @@
     const heroCopy = document.getElementById('hero-copy')
 
 
-function render (heroImage, heroimage, heroHeading, herocopy) {
+function render_hero_image (heroImage, heroimage) {
   heroImage.backgroundImage = `url('${heroimage}')`
   heroHeading.innerHTML = `${heroheading}`
+  heroCopy.innerHTML = `${herocopy}`
+}
+
+function render_hero_heading_text (heroHeading, heroheading) {
+  heroHeading.innerHTML = `${heroheading}`
+  heroCopy.innerHTML = `${herocopy}`
+}
+
+function render_hero_copy (heroCopy, herocopy) {
   heroCopy.innerHTML = `${herocopy}`
 }
 
@@ -21,7 +30,11 @@ function render (heroImage, heroimage, heroHeading, herocopy) {
     let { heroheading } = ready
     let { herocopy } = ready
   
-    render (heroImage, heroimage, heroHeading, heroheading, heroCopy, herocopy)
+    render_hero_image (heroImage, heroimage)
+    
+    render_hero_heading_text (heroHeading, heroheading)
+
+    render_hero_copy (heroCopy, herocopy)
 
   })()
   
