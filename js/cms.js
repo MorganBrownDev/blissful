@@ -1,9 +1,4 @@
 
-    const heroImage = document.getElementById('hero-image')
-    const heroHeading = document.getElementById('hero-head')
-    const heroCopy = document.getElementById('hero-copy')
-
-
 function render_hero_image (heroImage, heroimage) {
   heroImage.backgroundImage = `url('${heroimage}')`
   heroHeading.innerHTML = `${heroheading}`
@@ -21,6 +16,10 @@ function render_hero_copy (heroCopy, herocopy) {
 
   
   (async function () {
+
+    const heroImage = document.getElementById('hero-image')
+    const heroHeading = document.getElementById('hero-head')
+    const heroCopy = document.getElementById('hero-copy')
 
     
     let about = await fetch('cms/_posts/home.json')
