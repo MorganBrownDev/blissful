@@ -5,7 +5,6 @@ function render_hero_image (heroImage, heroimage) {
 
 function render_hero_heading_text (heroHeading, heroheading) {
   heroHeading.innerHTML = `${heroheading}`
-  heroCopy.innerHTML = `${herocopy}`
 }
 
 function render_hero_copy (heroCopy, herocopy) {
