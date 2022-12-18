@@ -1,8 +1,6 @@
 
 function render_hero_image (heroImage, heroimage) {
   heroImage.backgroundImage = `url('${heroimage}')`
-  heroHeading.innerHTML = `${heroheading}`
-  heroCopy.innerHTML = `${herocopy}`
 }
 
 function render_hero_heading_text (heroHeading, heroheading) {
