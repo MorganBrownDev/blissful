@@ -5,9 +5,9 @@
 
 
 function render (heroImage, heroimage, heroHeading, herocopy) {
-  hero_img.backgroundImage = `url('${heroimage}')`
-  hero_heading.innerHTML = `${heroheading}`
-  hero_copy.innerHTML = `${herocopy}`
+  heroImage.backgroundImage = `url('${heroimage}')`
+  heroHeading.innerHTML = `${heroheading}`
+  heroCopy.innerHTML = `${herocopy}`
 }
 
   
@@ -17,11 +17,11 @@ function render (heroImage, heroimage, heroHeading, herocopy) {
     let about = await fetch('cms/_posts/home.json')
     let ready = await about.json()
     
-    let { hero_image } = ready
-    let { hero_heading } = ready
-    let { hero_copy } = ready
+    let { heroimage } = ready
+    let { heroheading } = ready
+    let { herocopy } = ready
   
-    render (heroImage, heroimage, heroHeading, herocopy)
+    render (heroImage, heroimage, heroHeading, heroheading, heroCopy, herocopy)
 
   })()
   
