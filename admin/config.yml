@@ -15,3 +15,4 @@ collections:
           - { label: "Hero Image", name: "heroimage", widget: "image" }
           - { label: "Hero Heading", name: heroheading, widget: string }
           - { label: "Hero Copy", name: herocopy, widget: string }
+          - { label: 'Code' name: 'code' widget: 'code'}
