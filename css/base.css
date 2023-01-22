@@ -4,7 +4,7 @@ root CSS reset
 
 ----------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
 
 * {
     padding: 0;
@@ -14,14 +14,15 @@ root CSS reset
 
 /*width*/
 body::-webkit-scrollbar {
-width:10px;
+width: 8px;
 border: none !important;
-background: rgb(235, 235, 235);
+background: rgb(0, 0, 0);
 }
 /*thumb*/
 body::-webkit-scrollbar-thumb {
 background:rgb(174, 140, 99);
 border: none !important;
+border-radius: 10px;
 }
 
 /*----------------------------------------------------------------
@@ -32,13 +33,13 @@ Utilities
   
 
 body {
-    color: rgb(0, 0, 0);
-    font-family: 'Montserrat', sans-serif;
-    background: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-family: 'Red Hat Display', sans-serif;
+    background: rgb(0, 0, 0);
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 70px;
     display: flex;
     align-items: center;
@@ -47,7 +48,7 @@ header {
     padding-right: 100px;
     position: fixed;
     top: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     z-index: 101;
 }
 
@@ -178,8 +179,21 @@ Classes
     transition: 250ms ease;
 }
 
+.footer-link {
+    color: white;
+    font-size: 1rem;
+}
+
 .nav-link:hover {
     color: #AE8C63;
+}
+
+.footer-list {
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-image-holder {
@@ -192,6 +206,7 @@ Classes
 .hero-img {
     height: 100%;
     width: 100%;
+    max-width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -274,6 +289,17 @@ Classes
     text-align: center;
     background: rgb(235, 235, 235);
     position: relative;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 /*----------------------------------------------------------------
