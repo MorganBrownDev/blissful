@@ -1,0 +1,17 @@
+{
+  "background_color": "#000000",
+  "description": "Blissfull",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Blissfull",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Blissful",
+  "start_url": "/",
+  "theme_color": "#000000",
+  "categories": [],
+  "screenshots": [],
+  "icons": [],
+  "shortcuts": [],
+  "lang": "en"
+}
