@@ -4,7 +4,7 @@
   "dir": "ltr",
   "display": "standalone",
   "name": "Blissfull",
-  "orientation": "any",
+  "orientation": "portrait",
   "scope": "/",
   "short_name": "Blissful",
   "start_url": "/",
