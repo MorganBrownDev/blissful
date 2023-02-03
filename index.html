@@ -101,6 +101,17 @@
       once: false
       });
       </script>
+      <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', user => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/';
+            });
+          }
+        });
+      }
+    </script>
     <script src="js/cms.js"></script>
     <script src="js/base.js"></script>
 </html>
