@@ -208,6 +208,7 @@ Classes
     width: 100vw;
     max-width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .hero-img {
@@ -238,6 +239,43 @@ Classes
 
 .intro-text { 
     text-align: center;
+}
+
+.main-heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+#about-head {
+    margin-bottom: 50px;
+}
+
+.body-copy {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    max-width: 600px;
+}
+
+.large-display-heading {
+    font-size: 10rem;
+    line-height: 10.5rem;
+    text-align: center;
+}
+
+.heart {
+    display: inline-block;
+    position: relative;
+    animation: HeartAnimation 1.25s ease-in-out 0s infinite alternate forwards;
+}
+
+@keyframes HeartAnimation {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.8);
+	}
 }
 
 .card-content {
