@@ -6,12 +6,10 @@ publish_mode: editorial_workflow
 collections:
   - label: "Content"
     name: "content"
-    files:
-      - label: "Home page"
-        name: "homepage"
-        format: "json"
-        file: "cms/_posts/home.json"
-        fields:
-          - { label: "Hero Image", name: "heroimage", widget: "image" }
-          - { label: "Hero Heading", name: heroheading, widget: string }
-          - { label: "Hero Copy", name: herocopy, widget: string }
+    folder: 'cms/_posts'
+    create: true
+    format: "json"
+    fields:
+      - { label: "Hero Image", name: "heroimage", widget: "image" }
+      - { label: "Hero Heading", name: heroheading, widget: string }
+      - { label: "Hero Copy", name: herocopy, widget: string }
